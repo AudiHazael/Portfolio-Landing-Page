@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A brief description of your page's content.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.example.com/page">
+    <meta property="og:title" content="The title you want to appear on social media">
+    <meta property="og:description" content="A brief description of your page's content">
+    <meta property="og:image" content="https://www.example.com/image.jpg">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Page Title",
+            "description": "A brief description of your page's content",
+            "url": "https://www.example.com/page",
+            "image": "https://www.example.com/image.jpg"
+        }
+    </script>
+    <script src="js/jquery-3.6.4.min.js"></script>
+
+    <link href="/Assets/css/fontawesome.css" rel="stylesheet">
+    <link href="/Assets/css/brands.css" rel="stylesheet">
+    <link href="/Assets/css/solid.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+
+    <!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+
+
+    <title>Contact Us - Haza'El Devs</title>
+</head>
+
+
+<body class="">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Main navigation">
+            <div class="container text-center">
+                <a class="navbar-brand logo-Text" href="index.html">
+                    <img class="img-fluid" src="Images/logo-removebg-preview.png" alt="">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-light"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-end">
+                        <ul class="navbar-nav">
+                            <li class="me-4 ms-4"><a href=""><i class="fab fa-linkedin fa-lg"></i></a></li>
+                            <li class="me-4 ms-4"><a href=""><i class="fab fa-github fa-lg"></i></a></li>
+                            <li class="me-4 ms-4"><a href=""><i class="fab fa-whatsapp fa-lg"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="contactUs" id="contact">
+        <div class="container" id="animateOne">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="text-container">
+                        <h3>Get In Touch Through The Form Or Use The Info Below</h3>
+                        <p>Ready to take your business to the next level? Don't wait any longer! Send us a message
+                            using
+                            the contact form below and let's get started on your next project together. Our team of
+                            experts are eager to help you achieve your business goals.</p>
+                        <ul class="list-unstyled d-flex flex-wrap">
+                            <li><i class="fa-solid fa-phone fa-lg me-1"></i> <a href="tel:003024630820">+81
+                                    720
+                                    22 126</a></li>
+                            <li><i class="fab fa-whatsapp fa-lg"></i><a href="">003024630820</a></li>
+                            <li><i class="fa-solid fa-envelope fa-lg me-1"></i> <a
+                                    href="mailto:example@gmail.com">example@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <form>
+                        <div class="errorMessage">
+                            <ul>
+                                <li>Make sure to fill your name in the name field.</li>
+                                <li>Invalid or unrecognized email address.</li>
+                                <li>Click the check box to ensure you understand our privacy and terms & conditions.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="approveMessage">
+                            <ul>
+                                <li>Form has been successfully submitted. We will get back to you soon.</li>
+                            </ul>
+                        </div>
+
+
+                        <div class="mb-4 form-floating">
+                            <input type="text" class="form-control" id="floatingInput1" placeholder="Name">
+                            <label for="floatingInput1">Name</label>
+                        </div>
+                        <div class="mb-4 form-floating">
+                            <input type="email" class="form-control" id="floatingInput3" placeholder="name@example.com">
+                            <label for="floatingInput3">Email</label>
+                        </div>
+
+
+                        <div class="mb-4 input-group">
+                            <select class="form-select" id="inputGroupSelect1">
+                                <option selected>Interested in...</option>
+                                <option value="">General</option>
+                                <option value="">Design and Build My Website</option>
+                                <option value="">Content Management</option>
+                            </select>
+                        </div>
+                        <div class="mb-4 form-floating">
+                            <textarea class="form-control" id="floatingTextarea1" placeholder="Your message here"
+                                rows="4"></textarea>
+                            <label for="floatingTextarea1">Message</label>
+                        </div>
+
+
+
+                        <div class="mb-4 form-check">
+                            <input type="checkbox" class="form-check-input" id="">
+                            <label class="form-check-label" for="exampleCheck2">I agree with the <a
+                                    href="privacy.html">Privacy Policy</a> and <a href="T&C.html">Terms &
+                                    Conditions</a></label>
+                        </div>
+                        <button type="submit" class="btn btn-outline-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="successPopup" class="popup">
+        <div class="popup-content">
+            <h3>Great! Your form has been successfully submitted.</h3>
+            <p class="text-center">Thank you for reaching out to us. We will get back to you as soon as possible via
+                email. Please check
+                your inbox (and spam folder, just in case) for our response.</p>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="container">
+                        <a class="" href="index.html">
+                            <img class="img-fluid" src="Images/logo-removebg-preview.png" alt="">
+                        </a>
+                        <br><br>
+                        <div>
+                            <a href="privacy.html">Privacy Policy</a><br><a href="T&C.html">Terms &
+                                Conditions</a>
+                        </div>
+                        <br>
+                        <div class="socials">
+                            <ul class="list-unstyled d-flex justify-content-center">
+                                <li class="me-4 ms-4"><i class="fab fa-facebook fa-lg"></i></li>
+                                <li class="me-4 ms-4"><i class="fab fa-twitter fa-lg"></i></li>
+                                <li class="me-4 ms-4"><i class="fab fa-linkedin fa-lg"></i></li>
+                                <li class="me-4 ms-4"><i class="fab fa-github fa-lg"></i></li>
+                                <li class="me-4 ms-4"><i class="fab fa-whatsapp fa-lg"></i></li>
+                                <li class="me-4 ms-4"><i class="fab fa-behance fa-lg"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p class="text-center">Copyright © Haza'El Devs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/myScript.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

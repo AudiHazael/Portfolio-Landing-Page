@@ -1,0 +1,420 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+
+  body,
+  html {
+      width: 100%;
+      height: 100%;
+  }
+
+  body,
+  p {
+      color: #f6f6f6af;
+      font-weight: 300;
+      font-family: 'Montserrat', sans-serif;
+      text-align: justify;
+  }
+
+  body {
+      background: url('/Images/pierre-chatel-innocenti-pxoZSTdAzeU-unsplash.jpg') center center/cover no-repeat fixed;
+      opacity: 1;
+      margin: 0;
+      padding: 0;
+  }
+
+
+
+  h1 {
+      color: #f9f9f9e0;
+      font-weight: 700;
+      font-size: 2.5rem;
+      line-height: 3.25rem;
+      font-family: "Montserrat", sans-serif;
+  }
+
+  p.text-center {
+      margin-bottom: 0;
+  }
+
+  h2 {
+      color: #f9f9f9e0;
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 2.5rem;
+      font-family: "Montserrat", sans-serif;
+  }
+
+  h3 {
+      color: #f9f9f9e0;
+      font-weight: 700;
+      font-size: 1.75rem;
+      line-height: 2.25rem;
+      font-family: "Montserrat", sans-serif;
+  }
+
+  h4 {
+      color: #f9f9f9e0;
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      font-family: "Montserrat", sans-serif;
+  }
+
+  h5 {
+      color: #f9f9f9e0;
+      font-weight: 700;
+      font-size: 1.25rem;
+      line-height: 1.625rem;
+      font-family: "Montserrat", sans-serif;
+  }
+
+  h6 {
+      color: #f9f9f9e0;
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 1.375rem;
+      font-family: "Montserrat", sans-serif;
+  }
+
+  .p-large {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+  }
+
+  .p-small {
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+  }
+
+  a {
+      color: #b1caf5;
+      text-decoration: none;
+  }
+
+  a:hover {
+      color: #5679b6d8;
+      text-decoration: none;
+      transform: scale(1.05);
+      transition: ease 1s;
+  }
+
+
+  /* Form */
+  .form-floating label {
+      margin-left: 0.5rem;
+      color: #72719b;
+  }
+
+  .form-floating>.form-control:focus~label,
+  .form-floating>.form-control:not(:placeholder-shown)~label,
+  .form-floating>.form-select~label {
+      transform: scale(0.85) translateY(-.75rem) translateX(.15rem);
+  }
+
+  .form-floating .form-control {
+      padding-left: 1.25rem;
+  }
+
+  .form-select {
+      height: calc(3.5rem + 2px);
+      padding-left: 1.25rem;
+      color: #72719b;
+  }
+
+  .form-floating textarea.form-control {
+      height: 100%;
+  }
+
+  .form-floating .form-control:hover,
+  .form-select:hover {
+      border: 1px solid #a1a1a1;
+  }
+
+  .form-control-submit-button {
+      display: inline-block;
+      width: 100%;
+      height: 3.625rem;
+      border: 1px solid #153e52;
+      border-radius: 2px;
+      background-color: #153e52;
+      color: #ffffff;
+      font-weight: 400;
+      font-size: 0.875rem;
+      line-height: 0;
+      cursor: pointer;
+      transition: all 0.2s;
+  }
+
+  .form-control-submit-button:hover {
+      border: 1px solid #153e52;
+      background-color: transparent;
+      color: #153e52;
+  }
+
+  /* Document Background */
+  header,
+  footer,
+  .hero,
+  .termsAndConditions,
+  .privacy,
+  .contactUs {
+      background: #000000dc;
+  }
+
+  /* Header */
+  header {
+      padding-bottom: 0;
+      border-bottom: 1px solid rgba(170, 194, 216, 0.2);
+  }
+
+  .container {
+      position: relative;
+      z-index: 2;
+  }
+
+  /* Hero */
+  button.btn-outline-primary,
+  .btn-md {
+      background-color: #94b7f3;
+      border: none;
+      border-radius: 5px;
+      color: #010101;
+      padding: .5em 2em;
+      width: 50%;
+  }
+
+  button.btn-outline-primary:hover,
+  .btn-md:hover {
+      background-color: #0d4e996c;
+      border: none;
+      color: #f1f1f1;
+  }
+
+  .hero {
+      padding: 4em 0;
+  }
+
+  .hero .col-lg-6 {
+      padding: 1em 2em;
+  }
+
+  header i {
+      padding: 1em;
+  }
+
+  .contactBox,
+  .portfolioBox {
+      border-radius: 10px;
+      margin-top: 2em;
+      padding: 1em 2em;
+
+  }
+
+  .portfolioBox,
+  .contactBox {
+      background: linear-gradient(50deg,
+              rgba(170, 194, 216, 0.2) 12%,
+              rgba(255, 255, 255, 0.1) 77%);
+      box-shadow: 0px 4px 24px 1px rgba(0, 0, 0, 0.28);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+  }
+
+
+  .privacy,
+  .termsAndConditions {
+      padding: 4em 0;
+  }
+
+  /* Contact Section */
+  .contactUs {
+      padding: 2em 0;
+  }
+
+  .contactUs button {
+      background-color: #1e7ae481;
+      color: #f1f1f1;
+      width: 50%;
+  }
+
+  /* .contactUs .col-lg-6 .mb-4 .mb-lg-0 {
+    padding-top: 0;
+} */
+
+  .contactUs ul li i {
+      color: #1e7ae48f;
+      margin-right: 10px;
+  }
+
+  .contactUs ul li {
+      cursor: pointer;
+  }
+
+  form div.errorMessage {
+      background-color: rgba(243, 177, 177, 0.30);
+      border-radius: 3px;
+      color: rgb(255, 255, 255);
+      font-size: smaller;
+      display: none;
+  }
+
+  form div.approveMessage {
+      background-color: rgba(75, 192, 75, 0.30);
+      border-radius: 3px;
+      color: rgb(255, 255, 255);
+      font-size: smaller;
+      display: none;
+  }
+
+  .contactUs.animate .container {
+      animation: myAnim 1s ease-in-out 0s 2 normal forwards;
+  }
+
+  .contactUs .container {
+      background-color: rgba(170, 194, 216, 0.2);
+      opacity: 0.9;
+      padding: 3em 0;
+      border: none;
+      border-radius: 5px;
+      padding: 2em;
+      margin-top: 4em;
+      margin-bottom: 4em;
+  }
+
+  .contactUs .text-container ul li {
+      margin: .5em 2em 0 0;
+  }
+
+
+  @keyframes myAnim {
+      0% {
+          transform: scale(1);
+      }
+
+      50% {
+          transform: scale(1.0115);
+      }
+
+      100% {
+          transform: scale(1);
+      }
+  }
+
+  /* Portfolio */
+
+  .swiper-container {
+    background-color: #0000008e;
+      width: 100%;
+      height: 60vh;
+      /* Adjust the height as needed */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #0000008e;
+      max-width: max-content;
+      cursor: pointer;
+      padding: 4em 1em;
+  }
+
+  .swiper-slide p {
+      font-size: 15px;
+  }
+
+  .swiper-slide h4 {
+      padding-top: 1em;
+  }
+
+  .swiper-pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+  }
+
+  .swiper-pagination .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      background-color: #bbb;
+      border-radius: 50%;
+      margin: 0 5px;
+      opacity: 0.5;
+      transition: opacity 0.3s ease;
+      cursor: pointer;
+  }
+
+  .swiper-pagination .swiper-pagination-bullet-active {
+      opacity: 1;
+  }
+
+
+
+  /* Footer */
+  footer {
+      padding-top: 4em;
+      border-top: 1px solid rgba(170, 194, 216, 0.2);
+  }
+
+  footer p {
+      font-size: .8rem;
+  }
+
+  footer hr {
+      width: 100%;
+      height: 4px;
+  }
+
+  .socials li {
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      color: #a5c6eb6c;
+  }
+
+  .socials li:hover {
+      transform: scale(1.2);
+      color: #ffffff;
+  }
+
+  /* CSS for the success popup */
+  .popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease-in-out;
+  }
+
+  .popup.active {
+      opacity: 1;
+      pointer-events: auto;
+  }
+
+  .popup-content {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+      max-width: 25%;
+  }
+
+  .popup-content h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #010101;
+  }
+
+  .popup-content p {
+      font-size: 16px;
+      margin-bottom: 0;
+      color: #010101;
+  }
