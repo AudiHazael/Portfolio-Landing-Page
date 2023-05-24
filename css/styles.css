@@ -302,7 +302,7 @@
   /* Portfolio */
 
   .swiper-container {
-    background-color: #0000008e;
+      background: #000000dc;
       width: 100%;
       height: 60vh;
       /* Adjust the height as needed */
@@ -314,7 +314,7 @@
   .swiper-slide {
       text-align: center;
       font-size: 18px;
-      background: #0000008e;
+      background: #00000025;
       max-width: max-content;
       cursor: pointer;
       padding: 4em 1em;
