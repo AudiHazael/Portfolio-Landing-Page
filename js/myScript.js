@@ -1,5 +1,5 @@
 // Get the form element
-const form = document.querySelector('form');
+const form = document.querySelector('#myForm');
 
 // Get the error and approval message elements
 const errorMessage = document.querySelector('.errorMessage');
@@ -24,16 +24,13 @@ form.addEventListener('submit', function (event) {
     // Check if the name and email inputs are empty or invalid
     if (nameInput.value.trim() === '') {
         // Display the error message for the name field
-        errorMessage.style.display = 'block';
-        errorMessage.innerHTML = '<ul><li>Make sure to fill your name in the name field.</li></ul>';
+        displayErrorMessage('Make sure to fill your name in the name field.');
     } else if (!isValidEmail(emailInput.value.trim())) {
         // Display the error message for the email field
-        errorMessage.style.display = 'block';
-        errorMessage.innerHTML = '<ul><li>Invalid or unrecognized email address.</li></ul>';
+        displayErrorMessage('Invalid or unrecognized email address.');
     } else if (!checkboxInput.checked) {
         // Display the error message for the checkbox
-        errorMessage.style.display = 'block';
-        errorMessage.innerHTML = '<ul><li>Click the check box to ensure you understand our privacy and terms & conditions.</li></ul>';
+        displayErrorMessage('Click the check box to ensure you understand our privacy and terms & conditions.');
     } else {
         // Hide the error message
         errorMessage.style.display = 'none';
@@ -58,6 +55,13 @@ function isValidEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
+
+// Helper function to display the error message
+function displayErrorMessage(message) {
+    errorMessage.innerHTML = '<ul><li>' + message + '</li></ul>';
+    errorMessage.style.display = 'block';
+}
+
 
 
 

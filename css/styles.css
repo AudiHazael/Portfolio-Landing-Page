@@ -14,7 +14,7 @@ p {
 }
 
 body {
-    background: url('css/Images/backgroundImage.jpg') center center/cover no-repeat fixed;
+    background: url('/css/img/backgroundImage.jpg') center center/cover no-repeat fixed;
     opacity: 1;
     margin: 0;
     padding: 0;
