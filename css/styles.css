@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
-
 body,
 html {
     width: 100%;
@@ -14,7 +13,7 @@ p {
 }
 
 body {
-    background: url('css/Images/backgroundImage.jpg') center center/cover no-repeat fixed;
+    background: url('/css/img/backgroundImage.jpg') center center/cover no-repeat fixed;
     opacity: 1;
     margin: 0;
     padding: 0;
@@ -255,9 +254,6 @@ form div.approveMessage {
     display: none;
 }
 
-.contactUs.animate .container {
-    animation: myAnim 1s ease-in-out 0s 2 normal forwards;
-}
 
 .contactUs .container {
     background-color: rgba(170, 194, 216, 0.2);
@@ -274,20 +270,6 @@ form div.approveMessage {
     margin: .5em 2em 0 0;
 }
 
-
-@keyframes myAnim {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.0115);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
 
 /* Portfolio */
 
