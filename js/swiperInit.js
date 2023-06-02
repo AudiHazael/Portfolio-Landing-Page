@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 5, // Set a default value for slidesPerView
+        slidesPerView: 3, // Set a default value for slidesPerView
         spaceBetween: 0,
         loop: true,
         autoplay: {
@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 slidesPerView: 1,
             },
             // Set different options for larger screens
-            1200: {
-                slidesPerView: 5,
-            }
+            // 1200: {
+            //     slidesPerView: 3,
+            // }
         }
     });
 });
