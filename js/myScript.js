@@ -1,5 +1,5 @@
 // Get the form element
-const form = document.querySelector('#myForm');
+const form = document.querySelector('form');
 
 // Get the error and approval message elements
 const errorMessage = document.querySelector('.errorMessage');
@@ -24,13 +24,16 @@ form.addEventListener('submit', function (event) {
     // Check if the name and email inputs are empty or invalid
     if (nameInput.value.trim() === '') {
         // Display the error message for the name field
-        displayErrorMessage('Make sure to fill your name in the name field.');
+        errorMessage.style.display = 'block';
+        errorMessage.innerHTML = '<ul><li>Make sure to fill your name in the name field.</li></ul>';
     } else if (!isValidEmail(emailInput.value.trim())) {
         // Display the error message for the email field
-        displayErrorMessage('Invalid or unrecognized email address.');
+        errorMessage.style.display = 'block';
+        errorMessage.innerHTML = '<ul><li>Invalid or unrecognized email address.</li></ul>';
     } else if (!checkboxInput.checked) {
         // Display the error message for the checkbox
-        displayErrorMessage('Click the check box to ensure you understand our privacy and terms & conditions.');
+        errorMessage.style.display = 'block';
+        errorMessage.innerHTML = '<ul><li>Click the check box to ensure you understand our privacy and terms & conditions.</li></ul>';
     } else {
         // Hide the error message
         errorMessage.style.display = 'none';
@@ -55,21 +58,3 @@ function isValidEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
-
-
-
-
-// contactUs Section Aniation
-function isElementInViewport(el) {
-    var rect = el.getBoundingClientRect();
-    var windowHeight = window.innerHeight || document.documentElement.clientHeight;
-    var windowWidth = window.innerWidth || document.documentElement.clientWidth;
-
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= windowHeight &&
-        rect.right <= windowWidth
-    );
-}
-
